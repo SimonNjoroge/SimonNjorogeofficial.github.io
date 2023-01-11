@@ -1,0 +1,77 @@
+html{
+    min-height: 100vh;
+}
+
+body{
+    background: url(../1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.btn{
+    color: rgb(255, 238, 0);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 500px;
+    display: block;
+    text-align: center;
+    border: 2px dashed rgb(0, 255, 255);
+    text-transform: uppercase;
+    transition: all 2.0s ease-out;
+    background: #3fb362;
+    
+}
+.btn:hover{
+ background: transparent;
+ color: red;
+ font-family: cursive;
+ border-radius: 40%;
+ border: 3px solid whitesmoke;  
+}
+.btn:active{
+    background: red;
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+    
+}
+
+nav ul li{
+    color: #000000;
+    list-style-type: circle;
+    padding: 10px 20px;
+}
+nav ul li a{
+    position: absolute;
+    color: blue;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: orangered;
+    
+}
+nav ul li a:after{
+    content: '';
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 6px;
+  background: #26d12f;
+  transition: 0.5s;
+  bottom: 0;
+
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
